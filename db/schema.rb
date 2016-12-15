@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20161215074511) do
 
-  create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "title"
     t.text     "text",       limit: 65535
     t.datetime "created_at",               null: false
